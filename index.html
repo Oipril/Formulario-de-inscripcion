@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,100 +13,112 @@
     <div class="fondo"></div>
     <div class="fondo fondo2"></div>
     <div class="fondo fondo3"></div>
-<div>
-    <h1 class="h1Animated">Inscripcion de exposicion de bellas artes</h1>
-</div>
+    <div>
+        <h1 class="h1Animated">Inscripcion de exposicion de bellas artes</h1>
+    </div>
+
     <div class="container">
-    <form action="mailto:amocampo@escuelasproa.edu.ar" method="get">
+        <form action="mailto:amocampo@escuelasproa.edu.ar" method="get">
+            <div class="input-box">
+                <fieldset>
+                    <legend>Datos de contacto</legend>
+                    <p>
+                        <label>Apellido:</label>
+                        <input type="text" name="Apellido" pattern="[A-Za-z]+" size="24px" required>
+                    </p>
+                    <p>
+                        <label>Nombres:</label>
+                        <input type="text" id="Nombres" name="Nombres" pattern="[A-Za-z]+" size="24px" required>
+                    </p>
+                    <p>
+                        <label>Telefono:</label>
+                        <input type="tel" name="telefono" pattern="[0-9]{10}" size="15px" placeholder="Ingrese su número"
+                            required>
+                    </p>
+                    <p>
+                        <label>Correo:</label>
+                        <input type="email" name="correo" size="24px" placeholder="ingrese correo valido" required>
+                        <label>Fecha de nacimiento:</label>
+                        <input type="date" name="fecha" required>
+                    </p>
+                    <p>
+                        <label>Sexo:</label>
+                        <div class="radio-group">
+                            <label><input type="radio" name="sexo" value="Femenino" required> Femenino</label>
+                            <label><input type="radio" name="sexo" value="Masculino" required> Masculino</label>
+                            <label><input type="radio" name="sexo" value="X" required> X</label>
+                        </div>
+                    </p>
+                    
+                </fieldset>
 
-        <div class="input-box">
-        <fieldset>
-            <legend>Datos de contacto</legend>
-            <p>
-                <label>Apellidos:</label>
-                <input type="text" name="nombre" pattern="[A-Za-z]+" size="24px" required>
-            </p>
-            <p>
-                <label>Nombres:</label>
-                <input type="text" name="Apellidos" pattern="[A-Za-z]+" size="24px" required>
-            </p>
-            <p>
-                <label>Telefono:</label>
-<input type="tel" name="telefono" pattern="[0-9]{10}" size="15px" placeholder="Ingrese su número" required>
-            </p>
-            <p>
-                <label>Correo:</label>
-                <input type="email" name="correo" size="24px" placeholder="ingrese correo valido" required>
-                <label>Fecha:</label>
-                <input type="date" name="fecha" required>
-            </p>
-            <p>
-                <label >Sexo:</label>
-            <input type="radio" name="sexo" value="LAL" required> Femenino
-            <input type="radio" name="sexo" value="LAL" required> Masculino
-            <input type="radio" name="sexo" value="LAL" required>X
-            </p>
-        </fieldset>
+                <fieldset>
+                    <legend>Residencia</legend>
+                    <p>
+                        <label>Localidad:</label>
+                        <select name="Localidad" required>
+                            <option value="Cordoba">Ciudad de Córdoba</option>
+                            <option value="CruzDelEje">Cruz del Eje</option>
+                            <option value="LaCalera">La Calera</option>
+                            <option value="Cosquin">Cosquín</option>
+                            <option value="JesusMaria">Jesús María</option>
+                            <option value="CarlosPaz">Villa Carlos Paz</option>
+                            <option value="Oncativo">Oncativo</option>
+                            <option value="Laboulaye">Laboulaye</option>
+                            <option value="Oliva">Oliva</option>
+                            <option value="AltaGracia">Alta Gracia</option>
+                            <option value="Despenaderos">Despeñaderos</option>
+                            <option value="RioSegundo">Río Segundo</option>
+                            <option value="Molinari">Molinari</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label>Direccion:</label>
+                        <input type="text" name="direccion" size="43px"
+                            placeholder="ingrese barrio, calle, altura, etc" required>
+                    </p>
+                </fieldset>
 
-        <fieldset>
-            <legend>Residencia</legend>
-            <label>Localidad:</label>
-            <select name="Localidad" required>
-                <option value="Cordoba">Ciudad de Córdoba</option>
-                <option value="CruzDelEje">Cruz del Eje</option>
-                <option value="LaCalera">La Calera</option>
-                <option value="Cosquin">Cosquín</option>
-                <option value="JesusMaria">Jesús María</option>
-                <option value="CarlosPaz">Villa Carlos Paz</option>
-                <option value="Oncativo">Oncativo</option>
-                <option value="Laboulaye">Laboulaye</option>
-                <option value="Oliva">Oliva</option>
-                <option value="AltaGracia">Alta Gracia</option>
-                <option value="Despenaderos">Despeñaderos</option>
-                <option value="RioSegundo">Río Segundo</option>
-                <option value="Molinari">Molinari</option>
-            </select>
+                <fieldset>
+                    <legend>Postulacion</legend>
+                    
+                    <p>
+                        <label>Campo:</label>
+                        <div class="checkbox-group">
+                            <label><input type="checkbox" name="rama" value="Arquitectura"> Arquitectura</label>
+                            <label><input type="checkbox" name="rama" value="Escultura"> Escultura</label>
+                            <label><input type="checkbox" name="rama" value="Pintura"> Pintura</label>
+                            <label><input type="checkbox" name="rama" value="Musica"> Musica</label>
+                            <label><input type="checkbox" name="rama" value="Literatura"> Literatura</label>
+                            <label><input type="checkbox" name="rama" value="Danza"> Danza</label>
+                            <label><input type="checkbox" name="rama" value="Cine"> Cine</label>
+                            <label><input type="checkbox" name="rama" value="otro"> Otro</label>
+                        </div>
+                    </p>
+                    
+                    <p>
+                        <label>Foto del postulante :</label>
+                        <input type="file" name="imagen">
+                    </p>
+                    <p>
+                        <label>Dudas o comentarios:</label>
+                        <textarea name="metas" rows="3" cols="25"></textarea>
+                    </p>
+                </fieldset>
 
-            <p>
-                <label>Direccion:</label>
-                <input type="text" name="direccion" size="43px" placeholder="ingrese barrio, calle, altura, etc" required>
-            </p>
-        </fieldset>
-
-        <fieldset>
-            <legend>Postulacion</legend>
-            <label>Campo:</label>
-            <input type="checkbox" name="rama" value="Arquitectura"> Arquitectura
-            <input type="checkbox" name="rama" value="Escultura"> Escultura
-            <input type="checkbox" name="rama" value="Pintura"> Pintura
-            <input type="checkbox" name="rama" value="Musica"> Musica
-            <input type="checkbox" name="rama" value="Literatura"> Literatura
-            <input type="checkbox" name="rama" value="Danza"> Danza
-            <input type="checkbox" name="rama" value="Cine"> Cine
-            <input type="checkbox" name="rama" value="otro"> otro
-            
-            <p>
-                <label>Foto del postulante :</label>
-                <input type="file" name="imagen" required>
-            </p>
-            <p>
-                <label>Dudas o comentarios:</label>
-                <textarea name="metas" rows="3" cols="25"></textarea>
-            </p>
-        </fieldset>
-    </div>
-
-        <fieldset>
-            <div class="data-container">
-                <button type="submit" class="btn">enviar</button>
-                <button type="reset" class="btn">Restablecer</button>
+                <fieldset>
+                    <div class="data-container">
+                        <button type="submit" class="btn">Enviar</button>
+                        <button type="reset" class="btn">Restablecer</button>
+                    </div>
+                </fieldset>
             </div>
-        </fieldset>
-    </form>
+        </form>
     </div>
-</div> 
+    </div>
 
-<script src="scriptF.js"></script>
+    <script src="scriptF.js"></script>
 
 </body>
+
 </html>
