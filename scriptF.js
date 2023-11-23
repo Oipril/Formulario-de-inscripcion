@@ -1,5 +1,3 @@
-// script.js
-
 function validateForm() {
     var apellido = document.forms["myForm"]["nombre"].value;
     var nombre = document.forms["myForm"]["Apellidos"].value;
@@ -27,21 +25,21 @@ function validateForm() {
 }
 
 
-    function handleFormSubmit(event) {
-        // Aca se puede agregar el código para manejar el envío del formulario
-        // Por ejemplo, puedes usar fetch() para enviar los datos a un servidor.
-        event.preventDefault(); // Esto evita el envío predeterminado del formulario
-    }
-            resetForm(); // Restablecer el formulario después de enviarlo
-    
-    function resetForm() {
-        document.getElementById("miFormulario").reset();
-        }
-        document.addEventListener('DOMContentLoaded', function () {
+function handleFormSubmit(event) {
+    // Aca se puede agregar el código para manejar el envío del formulario
+
+    event.preventDefault(); // Esto evita el envío predeterminado del formulario
+}
+resetForm(); // Restablecer el formulario después de enviarlo
+
+function resetForm() {
+    document.getElementById("miFormulario").reset();
+}
+document.addEventListener('DOMContentLoaded', function() {
     var form = document.querySelector('form');
     var enviarBtn = document.querySelector('.btn[type="submit"]');
 
-    enviarBtn.addEventListener('click', function () {
+    enviarBtn.addEventListener('click', function() {
         var action = form.getAttribute('action');
         var mailtoLink = 'mailto:' + action;
         window.location.href = mailtoLink;
@@ -50,11 +48,11 @@ function validateForm() {
 
 //enviar
 
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', function() {
     var form = document.querySelector('form');
     var enviarBtn = document.querySelector('.btn[type="submit"]');
 
-    enviarBtn.addEventListener('click', function () {
+    enviarBtn.addEventListener('click', function() {
         var action = form.getAttribute('action');
         var mailtoLink = 'mailto:' + action;
         window.location.href = mailtoLink;
